@@ -1,0 +1,15 @@
+ALGORITHM Insertion
+var 
+    arr:Array of INTEGER;
+    i,j,temp:INTEGER;
+BEGIN
+    FOR i FROM 1 to arr.length-1 DO
+        temp:=arr[i];
+        j:=i-1;
+        while (j>=0 and arr[j]>temp)
+            arr[j+1]:=arr[i];
+            arr[j+1]:=temp;
+        end_while
+        j:=j-1;
+    END_FOR
+END
